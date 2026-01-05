@@ -22,14 +22,7 @@
 &nice_view_spi { cs-gpios = <&pro_micro 4 GPIO_ACTIVE_HIGH>; };
 
 / {
-    combos {
-        compatible = "zmk,combos";
-
-        sticky_ly1 {
-            bindings = <&sl 1>;
-            key-positions = <49 51>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     keymap {
         compatible = "zmk,keymap";
