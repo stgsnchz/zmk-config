@@ -32,6 +32,15 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        sticky_ly1 {
+            bindings = <&sl 1>;
+            key-positions = <49 51>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
