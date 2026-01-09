@@ -26,8 +26,15 @@
         compatible = "zmk,combos";
 
         escape {
-            bindings = <&kp ESC>;
-            key-positions = <36 0>;
+            bindings = <&kp RIGHT_PARENTHESIS>;
+            key-positions = <10 56>;
+            layers = <2>;
+        };
+
+        left_par {
+            bindings = <&kp LEFT_PARENTHESIS>;
+            key-positions = <56 9>;
+            layers = <2>;
         };
     };
 
@@ -39,7 +46,6 @@
 
             #binding-cells = <2>;
             flavor = "tap-preferred";
-            retro-tap;
             tapping-term-ms = <200>;
             hold-trigger-key-positions = <33>;
         };
@@ -106,11 +112,11 @@
             //                     |      |      |      |        |  |       |      |       |       |
 
             bindings = <
-&kp ESC           &kp EXCL  &kp AT  &kp HASH  &trans  &trans                     &trans       &trans           &trans            &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp GRAVE
-&trans            &trans    &trans  &trans    &trans  &trans                     &trans       &trans           &trans            &trans                &trans                 &trans
-&kp LEFT_CONTROL  &none     &trans  &trans    &trans  &trans                     &trans       &pgup HOME LEFT  &pgup PG_DN DOWN  &pgup PG_UP UP_ARROW  &pgup END RIGHT        &trans
-&kp LEFT_SHIFT    &trans    &trans  &trans    &trans  &kp F12  &trans    &trans  &kp KP_PLUS  &kp MINUS        &kp EQUAL         &kp LBKT              &kp BACKSLASH          &kp RIGHT_BRACKET
-                                    &trans    &trans  &trans   &trans    &trans  &trans       &trans           &trans
+&kp ESC           &kp EXCLAMATION  &kp AT_SIGN  &kp NON_US_HASH  &trans  &trans                     &trans       &trans           &trans            &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp GRAVE
+&trans            &trans           &trans       &trans           &trans  &trans                     &trans       &trans           &trans            &trans                &trans                 &trans
+&kp LEFT_CONTROL  &none            &trans       &trans           &trans  &trans                     &trans       &pgup HOME LEFT  &pgup PG_DN DOWN  &pgup PG_UP UP_ARROW  &pgup END RIGHT        &trans
+&kp LEFT_SHIFT    &trans           &trans       &trans           &trans  &kp F12  &trans    &trans  &kp KP_PLUS  &kp MINUS        &kp EQUAL         &kp LBKT              &kp BACKSLASH          &kp RIGHT_BRACKET
+                                                &trans           &trans  &trans   &trans    &trans  &trans       &trans           &trans
             >;
 
             sensor-bindings = <
