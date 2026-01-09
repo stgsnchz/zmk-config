@@ -32,13 +32,6 @@
     };
 
     behaviors {
-        right_encoder: right_encoder {
-            compatible = "zmk,behavior-sensor-rotate-var";
-            label = "RIGHT_ENCODER";
-            #sensor-binding-cells = <2>;
-            bindings = <&kp>, <&kp>;
-        };
-
         pgup: pgup {
             compatible = "zmk,behavior-hold-tap";
             label = "PGUP";
