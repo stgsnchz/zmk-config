@@ -119,10 +119,9 @@
                                                 &kp LEFT_ALT     &trans  &kp LEFT_WIN  &trans    &trans  &trans       &trans           &trans
             >;
 
-            sensor-bindings = <
-                        &inc_dec_kp C_VOL_UP C_VOL_DN
-                        &inc_dec_kp PG_UP PG_DN
-            >;
+            sensor-bindings =
+                <&inc_dec_kp RIGHT LEFT>,
+                <&inc_dec_kp PG_UP PG_DN>;
         };
 
         function_layer {
