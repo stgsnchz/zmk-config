@@ -56,6 +56,13 @@
             #binding-cells = <0>;
             bindings = <&kp TAB>, <&kp LA(TAB)>;
         };
+
+        right_encoder: right_encoder {
+            compatible = "zmk,behavior-sensor-rotate";
+            label = "RIGHT_ENCODER";
+            #sensor-binding-cells = <0>;
+            bindings = <&kp UP>, <&kp DOWN>;
+        };
     };
 
     keymap {
@@ -103,9 +110,7 @@
                                                        &kp LEFT_ALT       &trans          &kp LEFT_GUI  &trans    &trans  &trans     &trans     &trans
             >;
 
-            sensor-bindings =
-                <&inc_dec_kp UP_ARROW DOWN>,
-                <&inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings = <&right_encoder>, <&inc_dec_kp PG_UP PG_DN>;
         };
 
         raise_layer {
