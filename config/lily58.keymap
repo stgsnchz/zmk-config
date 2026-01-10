@@ -56,13 +56,6 @@
             #binding-cells = <0>;
             bindings = <&kp TAB>, <&kp LA(TAB)>;
         };
-
-        toggle_layer2: toggle_layer2 {
-            compatible = "zmk,behavior-toggle-layer";
-            label = "TOGGLE_LAYER2";
-            #binding-cells = <1>;
-            toggle-mode = "flip";
-        };
     };
 
     keymap {
@@ -125,10 +118,10 @@
             //                     |      |      |      |        |  |       |      |       |       |
 
             bindings = <
-&kp ESC           &kp EXCLAMATION  &kp AT_SIGN  &kp NON_US_HASH  &trans  &trans                          &trans  &trans           &trans            &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp GRAVE
-&trans            &trans           &trans       &trans           &trans  &trans                          &trans  &trans           &trans            &trans                &trans                 &trans
-&kp LEFT_CONTROL  &none            &trans       &trans           &trans  &trans                          &trans  &pgup HOME LEFT  &pgup PG_DN DOWN  &pgup PG_UP UP_ARROW  &pgup END RIGHT        &trans
-&kp LEFT_SHIFT    &trans           &trans       &trans           &trans  &kp F12       &trans    &trans  &trans  &trans           &kp LEFT_BRACKET  &kp RIGHT_BRACKET     &kp BACKSLASH          &sl 3
+&kp ESC           &kp EXCLAMATION  &kp AT_SIGN  &kp NON_US_HASH  &trans  &trans                          &trans  &trans           &trans                &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp GRAVE
+&trans            &trans           &trans       &trans           &trans  &trans                          &trans  &trans           &pgup PG_UP UP_ARROW  &trans                &trans                 &trans
+&kp LEFT_CONTROL  &none            &trans       &trans           &trans  &trans                          &trans  &pgup HOME LEFT  &pgup PG_DN DOWN      &pgup END RIGHT       &trans                 &trans
+&kp LEFT_SHIFT    &trans           &trans       &trans           &trans  &kp F12       &trans    &trans  &trans  &trans           &kp LEFT_BRACKET      &kp RIGHT_BRACKET     &kp BACKSLASH          &sl 3
                                                 &kp LEFT_ALT     &trans  &kp LEFT_WIN  &trans    &trans  &trans  &trans           &trans
             >;
 
@@ -148,6 +141,16 @@
 
             sensor-bindings = <&inc_dec_kp RIGHT LEFT>;
             label = "FUNCTION";
+        };
+
+        layer_4 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
+            >;
         };
     };
 };
