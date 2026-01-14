@@ -118,10 +118,10 @@
             //                     |      |      |      |        |  |       |      |       |       |
 
             bindings = <
-&kp ESC           &kp EXCL  &kp AT  &kp NON_US_HASH  &trans  &trans                          &trans  &trans           &trans                &kp KP_LEFT_PARENTHESIS  &kp KP_RIGHT_PARENTHESIS  &kp GRAVE
-&trans            &trans    &trans  &trans           &trans  &trans                          &trans  &trans           &pgup PG_UP UP_ARROW  &trans                   &trans                    &trans
-&kp LEFT_CONTROL  &none     &trans  &trans           &trans  &trans                          &trans  &pgup HOME LEFT  &pgup PG_DN DOWN      &pgup END RIGHT          &trans                    &trans
-&kp LEFT_SHIFT    &trans    &trans  &trans           &trans  &kp F12       &trans    &trans  &trans  &trans           &kp LEFT_BRACKET      &kp RIGHT_BRACKET        &kp BACKSLASH             &sl 3
+&kp ESC           &kp EXCL  &kp AT  &kp NON_US_HASH  &trans  &trans                          &trans  &trans           &trans                &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp GRAVE
+&trans            &trans    &trans  &trans           &trans  &trans                          &trans  &trans           &pgup PG_UP UP_ARROW  &trans                &trans                 &trans
+&kp LEFT_CONTROL  &none     &trans  &trans           &trans  &trans                          &trans  &pgup HOME LEFT  &pgup PG_DN DOWN      &pgup END RIGHT       &trans                 &trans
+&kp LEFT_SHIFT    &trans    &trans  &trans           &trans  &kp F12       &trans    &trans  &trans  &trans           &kp LEFT_BRACKET      &kp RIGHT_BRACKET     &kp BACKSLASH          &sl 3
                                     &kp LEFT_ALT     &trans  &kp LEFT_WIN  &trans    &trans  &trans  &trans           &trans
             >;
 
