@@ -111,11 +111,11 @@
             //                     |      |      |      |        |  |       |      |       |       |
 
             bindings = <
-&kp F1            &kp F2            &kp F3             &kp F4             &kp F5          &kp F6                          &kp F7     &kp F8    &kp F9     &kp F10   &kp F11   &kp F12
-&tapALT           &bt BT_CLR        &bt BT_NXT         &bt BT_PRV         &bt BT_CLR_ALL  &trans                          &trans     &trans    &trans     &trans    &trans    &trans
-&kp LEFT_CONTROL  &kp EXCL          &kp AT             &kp HASH           &kp DOLLAR      &kp PRCNT                       &kp CARET  &kp AMPS  &kp ASTRK  &kp LPAR  &kp RPAR  &kp TILDE
-&kp LEFT_SHIFT    &ext_power EP_ON  &ext_power EP_OFF  &ext_power EP_TOG  &trans          &trans        &trans    &trans  &trans     &trans    &kp LBRC   &kp RBRC  &kp PIPE  &kp LEFT_SHIFT
-                                                       &kp LEFT_ALT       &trans          &kp LEFT_GUI  &trans    &trans  &trans     &trans    &trans
+&kp F1            &kp F2            &kp F3             &kp F4             &kp F5          &kp F6                          &kp F7         &kp F8          &kp F9           &kp F10           &kp F11   &kp F12
+&tapALT           &bt BT_CLR        &bt BT_NXT         &bt BT_PRV         &bt BT_CLR_ALL  &trans                          &trans         &trans          &trans           &trans            &trans    &trans
+&kp LEFT_CONTROL  &kp EXCL          &kp AT             &kp HASH           &kp DOLLAR      &kp PRCNT                       &kp CARET      &kp AMPS        &kp ASTRK        &kp LPAR          &kp RPAR  &kp TILDE
+&kp LEFT_SHIFT    &ext_power EP_ON  &ext_power EP_OFF  &ext_power EP_TOG  &trans          &trans        &trans    &trans  &kp LESS_THAN  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp GREATER_THAN  &kp PIPE  &kp LEFT_SHIFT
+                                                       &kp LEFT_ALT       &trans          &kp LEFT_GUI  &trans    &trans  &trans         &trans          &trans
             >;
 
             sensor-bindings =
@@ -134,11 +134,11 @@
             //                     |      |      |      |        |  |       |      |       |       |
 
             bindings = <
-&kp ESC           &kp EXCL  &kp AT  &kp NON_US_HASH  &trans  &trans                          &trans  &trans           &trans                &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp GRAVE
-&trans            &trans    &trans  &trans           &trans  &trans                          &trans  &trans           &pgup PG_UP UP_ARROW  &trans                &trans                 &trans
-&kp LEFT_CONTROL  &none     &trans  &trans           &trans  &trans                          &trans  &pgup HOME LEFT  &pgup PG_DN DOWN      &pgup END RIGHT       &trans                 &trans
-&kp LEFT_SHIFT    &trans    &trans  &trans           &trans  &kp F12       &trans    &trans  &trans  &trans           &kp LEFT_BRACKET      &kp RIGHT_BRACKET     &kp BACKSLASH          &sl 3
-                                    &kp LEFT_ALT     &trans  &kp LEFT_WIN  &trans    &trans  &trans  &trans           &trans
+&kp ESC           &kp EXCL  &kp AT  &kp NON_US_HASH  &trans  &trans                          &trans  &trans            &trans                &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp GRAVE
+&trans            &trans    &trans  &trans           &trans  &trans                          &trans  &trans            &pgup PG_UP UP_ARROW  &trans                &trans                 &trans
+&kp LEFT_CONTROL  &none     &trans  &trans           &trans  &trans                          &trans  &pgup HOME LEFT   &pgup PG_DN DOWN      &pgup END RIGHT       &trans                 &trans
+&kp LEFT_SHIFT    &trans    &trans  &trans           &trans  &kp F12       &trans    &trans  &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET     &trans                &kp BACKSLASH          &sl 3
+                                    &kp LEFT_ALT     &trans  &kp LEFT_WIN  &trans    &trans  &trans  &trans            &trans
             >;
 
             sensor-bindings =
