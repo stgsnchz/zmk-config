@@ -111,11 +111,11 @@
             //                     |      |      |      |        |  |       |      |       |       |
 
             bindings = <
-&kp F1            &kp F2            &kp F3             &kp F4             &kp F5          &kp F6                          &kp F7         &kp F8          &kp F9           &kp F10           &kp F11   &kp F12
-&tapALT           &bt BT_CLR        &bt BT_NXT         &bt BT_PRV         &bt BT_CLR_ALL  &trans                          &trans         &trans          &trans           &trans            &trans    &trans
-&kp LEFT_CONTROL  &kp EXCL          &kp AT             &kp HASH           &kp DOLLAR      &kp PRCNT                       &kp CARET      &kp AMPS        &kp ASTRK        &kp LPAR          &kp RPAR  &kp TILDE
-&kp LEFT_SHIFT    &ext_power EP_ON  &ext_power EP_OFF  &ext_power EP_TOG  &trans          &trans        &trans    &trans  &kp LESS_THAN  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp GREATER_THAN  &kp PIPE  &kp LEFT_SHIFT
-                                                       &kp LEFT_ALT       &trans          &kp LEFT_GUI  &trans    &trans  &trans         &trans          &trans
+&kp F1            &kp F2            &kp F3             &kp F4             &kp F5          &kp F6                          &kp F7     &kp F8          &kp F9           &kp F10   &kp F11   &kp F12
+&tapALT           &bt BT_CLR        &bt BT_NXT         &bt BT_PRV         &bt BT_CLR_ALL  &trans                          &trans     &trans          &trans           &trans    &trans    &trans
+&kp LEFT_CONTROL  &kp EXCL          &kp AT             &kp HASH           &kp DOLLAR      &kp PRCNT                       &kp CARET  &kp AMPS        &kp ASTRK        &kp LPAR  &kp RPAR  &kp TILDE
+&kp LEFT_SHIFT    &ext_power EP_ON  &ext_power EP_OFF  &ext_power EP_TOG  &trans          &trans        &trans    &trans  &kp LT     &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp GT    &kp PIPE  &kp LEFT_SHIFT
+                                                       &kp LEFT_ALT       &trans          &kp LEFT_GUI  &trans    &trans  &trans     &trans          &trans
             >;
 
             sensor-bindings =
@@ -155,7 +155,7 @@
                                 &kp LEFT_ALT  &trans  &kp LEFT_GUI  &trans    &trans  &trans  &trans  &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp RIGHT LEFT>;
+            sensor-bindings = <&inc_dec_kp LT GT>;
             label = "FUNCTION";
         };
 
