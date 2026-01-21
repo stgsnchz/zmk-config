@@ -57,20 +57,21 @@
             bindings = <&kp TAB>, <&kp LA(TAB)>;
         };
 
-        altgr: altgr {
-            compatible = "zmk,behavior-tap-dance";
-            label = "ALTGR";
-            #binding-cells = <0>;
-            bindings = <&kp DEL>, <&kp LC(LEFT_ALT)>;
-
-            tapping-term-ms = <250>;
-        };
-
         shift_caps: shift_caps {
             compatible = "zmk,behavior-tap-dance";
             label = "SHIFT_CAPS";
             #binding-cells = <0>;
             bindings = <&kp LEFT_SHIFT>, <&kp CAPSLOCK>;
+        };
+
+        alt_gr_HOLD: alt_gr_HOLD {
+            compatible = "zmk,behavior-hold-tap";
+            label = "ALT_GR_HOLD";
+            bindings = <&sl>, <&kp>;
+
+            #binding-cells = <2>;
+            flavor = "tap-unless-interrupted";
+            tapping-term-ms = <250>;
         };
     };
 
@@ -88,11 +89,11 @@
             //                     | ALT  | GUI  | LOWER|  SPACE |  | ENTER | RAISE| BSPC  | GUI   |
 
             bindings = <
-&kp ESC         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp N4  &kp N5                                 &kp N6         &kp N7  &kp N8     &pgup LEFT_PARENTHESIS NUMBER_9  &pgup RIGHT_PARENTHESIS N0  &kp EQUAL
-&tapALT         &kp Q         &kp W         &kp E         &kp R   &kp T                                  &kp Y          &kp U   &kp I      &kp O                            &kp P                       &kp MINUS
-&kp LCTRL       &kp A         &kp S         &kp D         &kp F   &kp G                                  &kp H          &kp J   &kp K      &kp L                            &kp SEMI                    &kp SQT
-&kp LEFT_SHIFT  &kp Z         &kp X         &kp C         &kp V   &kp B         &kp LBKT      &kp RBKT   &kp N          &kp M   &kp COMMA  &kp DOT                          &kp FSLH                    &kp LEFT_SHIFT
-                                            &kp LALT      &sl 1   &kp LEFT_GUI  &kp RETURN    &kp SPACE  &kp BACKSPACE  &tog 2  &altgr
+&kp ESC         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp N4  &kp N5                                 &kp N6         &kp N7  &kp N8              &pgup LEFT_PARENTHESIS NUMBER_9  &pgup RIGHT_PARENTHESIS N0  &kp EQUAL
+&tapALT         &kp Q         &kp W         &kp E         &kp R   &kp T                                  &kp Y          &kp U   &kp I               &kp O                            &kp P                       &kp MINUS
+&kp LCTRL       &kp A         &kp S         &kp D         &kp F   &kp G                                  &kp H          &kp J   &kp K               &kp L                            &kp SEMI                    &kp SQT
+&kp LEFT_SHIFT  &kp Z         &kp X         &kp C         &kp V   &kp B         &kp LBKT      &kp RBKT   &kp N          &kp M   &kp COMMA           &kp DOT                          &kp FSLH                    &kp LEFT_SHIFT
+                                            &kp LALT      &sl 1   &kp LEFT_GUI  &kp RETURN    &kp SPACE  &kp BACKSPACE  &tog 2  &alt_gr_HOLD 4 DEL
             >;
 
             sensor-bindings =
@@ -155,12 +156,14 @@
                                 &kp LEFT_ALT  &trans  &kp LEFT_GUI  &trans    &trans  &trans  &trans  &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp LT GT>,
-                              <&inc_dec_kp UP_ARROW DOWN_ARROW>;
+            sensor-bindings =
+                <&inc_dec_kp LT GT>,
+                <&inc_dec_kp UP_ARROW DOWN_ARROW>;
+
             label = "FUNCTION";
         };
 
-        layer_4 {
+        alt_gr_layer {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
@@ -168,6 +171,8 @@
 &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
                         &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
             >;
+
+            label = "ALTGR";
         };
     };
 };
