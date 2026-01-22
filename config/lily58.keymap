@@ -64,14 +64,13 @@
             bindings = <&kp LEFT_SHIFT>, <&kp CAPSLOCK>;
         };
 
-        alt_gr_HOLD: alt_gr_HOLD {
-            compatible = "zmk,behavior-hold-tap";
-            label = "ALT_GR_HOLD";
-            bindings = <&sl>, <&kp>;
+        altgr_DBTAP: altgr_DBTAP {
+            compatible = "zmk,behavior-tap-dance";
+            label = "ALTGR_DBTAP";
+            #binding-cells = <0>;
+            bindings = <&kp DEL>, <&sl 4>;
 
-            #binding-cells = <2>;
-            flavor = "tap-unless-interrupted";
-            tapping-term-ms = <250>;
+            tapping-term-ms = <300>;
         };
     };
 
@@ -89,11 +88,11 @@
             //                     | ALT  | GUI  | LOWER|  SPACE |  | ENTER | RAISE| BSPC  | GUI   |
 
             bindings = <
-&kp ESC         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp N4  &kp N5                                               &kp N6         &kp N7  &kp N8              &pgup LEFT_PARENTHESIS NUMBER_9  &pgup RIGHT_PARENTHESIS N0  &kp EQUAL
-&tapALT         &kp Q         &kp W         &kp E         &kp R   &kp T                                                &kp Y          &kp U   &kp I               &kp O                            &kp P                       &kp MINUS
-&kp LCTRL       &kp A         &kp S         &kp D         &kp F   &kp G                                                &kp H          &kp J   &kp K               &kp L                            &kp SEMI                    &kp SQT
-&kp LEFT_SHIFT  &kp Z         &kp X         &kp C         &kp V   &kp B         &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &kp N          &kp M   &kp COMMA           &kp DOT                          &kp FSLH                    &kp LEFT_SHIFT
-                                            &kp LALT      &sl 1   &kp LEFT_GUI  &kp RETURN          &kp SPACE          &kp BACKSPACE  &tog 2  &alt_gr_HOLD 4 DEL
+&kp ESC         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp N4  &kp N5                                               &kp N6         &kp N7  &kp N8        &pgup LEFT_PARENTHESIS NUMBER_9  &pgup RIGHT_PARENTHESIS N0  &kp EQUAL
+&tapALT         &kp Q         &kp W         &kp E         &kp R   &kp T                                                &kp Y          &kp U   &kp I         &kp O                            &kp P                       &kp MINUS
+&kp LCTRL       &kp A         &kp S         &kp D         &kp F   &kp G                                                &kp H          &kp J   &kp K         &kp L                            &kp SEMI                    &kp SQT
+&kp LEFT_SHIFT  &kp Z         &kp X         &kp C         &kp V   &kp B         &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &kp N          &kp M   &kp COMMA     &kp DOT                          &kp FSLH                    &kp LEFT_SHIFT
+                                            &kp LALT      &sl 1   &kp LEFT_GUI  &kp RETURN          &kp SPACE          &kp BACKSPACE  &tog 2  &altgr_DBTAP
             >;
 
             sensor-bindings =
