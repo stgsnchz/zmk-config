@@ -88,10 +88,10 @@
             //                     | ALT  | GUI  | LOWER|  SPACE |  | ENTER | RAISE| BSPC  | GUI   |
 
             bindings = <
-&kp ESC         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp N4  &kp N5                                               &kp N6         &kp N7  &kp N8        &pgup LEFT_PARENTHESIS NUMBER_9  &pgup RIGHT_PARENTHESIS N0  &kp EQUAL
-&tapALT         &kp Q         &kp W         &kp E         &kp R   &kp T                                                &kp Y          &kp U   &kp I         &kp O                            &kp P                       &kp MINUS
-&kp LCTRL       &kp A         &kp S         &kp D         &kp F   &kp G                                                &kp H          &kp J   &kp K         &kp L                            &kp SEMI                    &kp SQT
-&kp LEFT_SHIFT  &kp Z         &kp X         &kp C         &kp V   &kp B         &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &kp N          &kp M   &kp COMMA     &kp DOT                          &kp FSLH                    &kp LEFT_SHIFT
+&kp ESC         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp N4  &kp N5                                               &kp N6         &kp N7  &kp N8        &pgup LEFT_PARENTHESIS NUMBER_9  &pgup RIGHT_PARENTHESIS NUMBER_0  &kp EQUAL
+&tapALT         &kp Q         &kp W         &kp E         &kp R   &kp T                                                &kp Y          &kp U   &kp I         &kp O                            &kp P                             &kp MINUS
+&kp LCTRL       &kp A         &kp S         &kp D         &kp F   &kp G                                                &kp H          &kp J   &kp K         &kp L                            &kp SEMI                          &kp SQT
+&kp LEFT_SHIFT  &kp Z         &kp X         &kp C         &kp V   &kp B         &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &kp N          &kp M   &kp COMMA     &kp DOT                          &kp FSLH                          &shift_caps
                                             &kp LALT      &sl 1   &kp LEFT_GUI  &kp RETURN          &kp SPACE          &kp BACKSPACE  &tog 2  &altgr_DBTAP
             >;
 
@@ -164,11 +164,11 @@
 
         alt_gr_layer {
             bindings = <
-&trans  &trans         &trans         &trans             &trans         &trans                           &trans             &trans         &trans         &trans              &trans         &trans
-&trans  &kp LC(LA(Q))  &kp LC(LA(C))  &kp LC(LA(O))      &kp LC(LA(P))  &kp LC(LA(W))                    &kp LC(LA(J))      &kp LC(LA(M))  &kp LC(LA(D))  &kp SINGLE_QUOTE    &kp LC(LA(Y))  &trans
-&trans  &kp LC(LA(A))  &kp LC(LA(S))  &kp LC(LA(E))      &kp LC(LA(N))  &kp LC(LA(F))                    &kp LC(LA(L))      &kp LC(LA(R))  &kp LC(LA(T))  &kp LC(LA(I))       &kp LC(LA(U))  &trans
-&trans  &kp LC(LA(Z))  &kp LC(LA(X))  &kp LC(LA(SLASH))  &kp LC(LA(V))  &kp LC(LA(B))  &trans    &trans  &kp LC(LA(COMMA))  &kp LC(LA(H))  &kp LC(LA(G))  &kp LC(LA(PERIOD))  &kp LC(LA(K))  &trans
-                                      &trans             &trans         &trans         &trans    &trans  &trans             &trans         &trans
+&trans  &trans         &trans         &trans         &trans         &trans                           &trans         &trans         &trans             &trans              &trans              &trans
+&trans  &kp LC(LA(Q))  &kp LC(LA(W))  &kp LC(LA(E))  &kp LC(LA(R))  &kp LC(LA(T))                    &kp LC(LA(Y))  &kp LC(LA(U))  &kp LC(LA(I))      &kp SINGLE_QUOTE    &kp LC(LA(P))       &trans
+&trans  &kp LC(LA(A))  &kp LC(LA(S))  &kp LC(LA(D))  &kp LC(LA(F))  &kp LC(LA(G))                    &kp LC(LA(H))  &kp LC(LA(J))  &kp LC(LA(K))      &kp LC(LA(L))       &kp LC(LA(PERIOD))  &trans
+&trans  &kp LC(LA(Z))  &kp LC(LA(X))  &kp LC(LA(C))  &kp LC(LA(V))  &kp LC(LA(B))  &trans    &trans  &kp LC(LA(N))  &kp LC(LA(M))  &kp LC(LA(COMMA))  &kp LC(LA(PERIOD))  &kp LC(LA(K))       &trans
+                                      &trans         &trans         &trans         &trans    &trans  &trans         &trans         &trans
             >;
 
             label = "ALTGR";
