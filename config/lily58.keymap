@@ -93,7 +93,7 @@
 &kp ESC         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp N4  &kp N5                                    &kp N6         &kp N7  &kp N8        &kp N9   &kp N0    &kp EQUAL
 &tapALT         &kp Q         &kp W         &kp E         &kp R   &kp T                                     &kp Y          &kp U   &kp I         &kp O    &kp P     &kp MINUS
 &kp LCTRL       &kp A         &kp S         &kp D         &kp F   &kp G                                     &kp H          &kp J   &kp K         &kp L    &kp SEMI  &kp SQT
-&kp LEFT_SHIFT  &kp Z         &kp X         &kp C         &kp V   &kp B         &sl 4         &kp CAPSLOCK  &kp N          &kp M   &kp COMMA     &kp DOT  &kp FSLH  &shift_caps
+&kp LEFT_SHIFT  &kp Z         &kp X         &kp C         &kp V   &kp B         &tog 4        &kp CAPSLOCK  &kp N          &kp M   &kp COMMA     &kp DOT  &kp FSLH  &shift_caps
                                             &kp LALT      &sl 1   &kp LEFT_GUI  &kp RETURN    &kp SPACE     &kp BACKSPACE  &tog 2  &altgr_DBTAP
             >;
 
@@ -113,11 +113,11 @@
             //                     |      |      |      |        |  |       |      |       |       |
 
             bindings = <
-&kp F1            &kp F2            &kp F3             &kp F4             &kp F5          &kp F6                          &kp F7     &kp F8          &kp F9           &kp F10    &kp F11   &kp F12
-&tapALT           &bt BT_CLR        &bt BT_NXT         &bt BT_PRV         &bt BT_CLR_ALL  &trans                          &trans     &trans          &trans           &trans     &trans    &trans
-&kp LEFT_CONTROL  &kp EXCL          &kp AT             &kp HASH           &kp DOLLAR      &kp PRCNT                       &kp CARET  &kp AMPS        &kp ASTRK        &kp LPAR   &kp RPAR  &kp TILDE
-&kp LEFT_SHIFT    &ext_power EP_ON  &ext_power EP_OFF  &ext_power EP_TOG  &trans          &trans        &trans    &trans  &kp SEMI   &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp COLON  &kp PIPE  &kp LEFT_SHIFT
-                                                       &kp LEFT_ALT       &trans          &kp LEFT_GUI  &trans    &trans  &trans     &sl 3           &trans
+&kp F1            &kp F2            &kp F3             &kp F4             &kp F5          &kp F6                          &kp F7        &kp F8          &kp F9           &kp F10        &kp F11   &kp F12
+&tapALT           &bt BT_CLR        &bt BT_NXT         &bt BT_PRV         &bt BT_CLR_ALL  &trans                          &trans        &trans          &trans           &trans         &trans    &trans
+&kp LEFT_CONTROL  &kp EXCL          &kp AT             &kp HASH           &kp DOLLAR      &kp PRCNT                       &kp CARET     &kp AMPS        &kp ASTRK        &kp LPAR       &kp RPAR  &kp TILDE
+&kp LEFT_SHIFT    &ext_power EP_ON  &ext_power EP_OFF  &ext_power EP_TOG  &trans          &trans        &trans    &trans  &kp RS(SEMI)  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp RS(COMMA)  &kp PIPE  &kp LEFT_SHIFT
+                                                       &kp LEFT_ALT       &trans          &kp LEFT_GUI  &trans    &trans  &trans        &sl 3           &trans
             >;
 
             sensor-bindings =
