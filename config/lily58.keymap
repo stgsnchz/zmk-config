@@ -124,8 +124,6 @@
             sensor-bindings =
                 <&msc SCRL_UP SCRL_DOWN>,
                 <&msc SCRL_LEFT SCRL_RIGHT>;
-
-            ;
         };
 
         raise_layer {
