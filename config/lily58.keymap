@@ -122,8 +122,10 @@
             >;
 
             sensor-bindings =
-                <&msc SCRL_UP SCRL_DOWN>,
-                <&msc SCRL_LEFT SCRL_RIGHT>;
+               # <&msc SCRL_UP SCRL_DOWN>,
+               # <&msc SCRL_LEFT SCRL_RIGHT>;
+                <&inc_dec_kp PG_DN PG_UP>,
+                <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         raise_layer {
