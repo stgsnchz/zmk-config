@@ -8,6 +8,7 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/pointing.h>
 
 / {
     sensors {
@@ -73,6 +74,15 @@
             bindings = <&kp DEL>, <&tog 4>;
 
             tapping-term-ms = <300>;
+        };
+
+        mouse_scroll: mouse_scroll {
+            compatible = "zmk,behavior-sensor-rotate";
+            label = "MOUSE_SCROLL";
+            #sensor-binding-cells = <0>;
+            bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
+
+            tap-ms = <100>;
         };
     };
 
