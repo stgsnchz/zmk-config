@@ -1,2 +1,2 @@
 config SHIELD_lily58_DONGLE
-    def_bool $(shields_list_contains,my_keyboard_dongle)
+    def_bool $(shields_list_contains,lily58_dongle)
