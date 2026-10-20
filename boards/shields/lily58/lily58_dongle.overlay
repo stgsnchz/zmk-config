@@ -60,11 +60,11 @@
     };
 
     left_soldered_encoder: soldered_encoder_left {
-        status = "disabled";
+        status = "okay";
     };
 
     right_soldered_encoder: soldered_encoder_right {
-        status = "disabled";
+        status = "okay";
     };
 
     sensors: sensors {
