@@ -12,7 +12,8 @@ manifest:
       revision: v0.3
       import: app/west.yml
     - name: zmk-halcyon-module
-      remote: splitkb
+      # remote: splitkb
+      url: https://github.com/stgsnchz/zmk-halcyon-module
       revision: v0.3
     - name: nv-gem
       url: https://github.com/MechboardsLTD/zmk-module
