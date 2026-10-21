@@ -39,24 +39,24 @@
     
 include:
   # USB dongle: central controller
-  - board: halcyon_dongle
+  - board: halcyon_dongle//zmk
     shield: lily58_dongle
 
   # Lily58 left half: peripheral
-  - board: nice_nano_v2
+  - board: nice_nano//zmk
     shield: lily58_left(1)
     cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
 
   # Lily58 right half: peripheral
-  - board: nice_nano_v2
+  - board: nice_nano//zmk
     shield: lily58_right(1)
     cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
 
   # Reset firmware for both nice!nano v2 controllers
-  - board: nice_nano_v2
+  - board: nice_nano//zmk
     shield: settings_reset
 
   # Reset firmware for the Halcyon Dongle
-  - board: halcyon_dongle
+  - board: halcyon_dongle//zmk
     shield: settings_reset
 
