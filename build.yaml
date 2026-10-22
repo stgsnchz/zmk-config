@@ -44,12 +44,12 @@ include:
 
   # Lily58 left half: peripheral
   - board: nice_nano_v2
-    shield: lily58_left(1)
+    shield: lily58_left
     cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
 
   # Lily58 right half: peripheral
   - board: nice_nano_v2
-    shield: lily58_right(1)
+    shield: lily58_right
     cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
 
   # Reset firmware for both nice!nano v2 controllers
