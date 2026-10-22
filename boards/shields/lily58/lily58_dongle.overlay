@@ -74,9 +74,15 @@
         status = "disabled";
     };
 
-    sensors: sensors {
-        compatible = "zmk,keymap-sensors";
-        sensors = <&left_halcyon_encoder &right_halcyon_encoder &left_encoder &right_encoder>;
-        triggers-per-rotation = <80>;
-    };
+sensors: sensors {
+    compatible = "zmk,keymap-sensors";
+    sensors = <&left_encoder &right_encoder>;
+    triggers-per-rotation = <20>;
+};
+
+   # sensors: sensors {
+     #   compatible = "zmk,keymap-sensors";
+      #  sensors = <&left_halcyon_encoder &right_halcyon_encoder &left_encoder &right_encoder>;
+    #    triggers-per-rotation = <80>;
+   # };
 };
