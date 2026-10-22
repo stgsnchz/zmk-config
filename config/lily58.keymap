@@ -19,7 +19,6 @@
 
 &led_strip { chain-length = <37>; };
 
-
 / {
     combos {
         compatible = "zmk,combos";
@@ -125,7 +124,7 @@
             >;
 
             sensor-bindings =
-                <&inc_dec_kp PG_DN PG_UP>,
+                <&inc_dec_kp LC(PG_DN) LC(PG_UP)>,
                 <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
@@ -159,4 +158,3 @@
         };
     };
 };
-
