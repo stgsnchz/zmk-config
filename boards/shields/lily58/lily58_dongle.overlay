@@ -58,17 +58,17 @@
         status = "disabled";
     };
 
-    left_encoder: encoder_left {
+    left_soldered_encoder: soldered_encoder_left {
         status = "okay";
     };
 
-    right_encoder: encoder_right {
+    right_soldered_encoder: soldered_encoder_right {
         status = "okay";
     };
 
     sensors: sensors {
         compatible = "zmk,keymap-sensors";
-        sensors = <&left_halcyon_encoder &right_halcyon_encoder &left_encoder &right_encoder>;
+        sensors = <&left_halcyon_encoder &right_halcyon_encoder &left_soldered_encoder &right_soldered_encoder>;
         triggers-per-rotation = <20>;
     };
 };
