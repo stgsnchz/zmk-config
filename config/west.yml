@@ -11,11 +11,11 @@ manifest:
       remote: zmkfirmware
       revision: v0.3
       import: app/west.yml
+    - name: zmk-halcyon-module
+      remote: splitkb
+      revision: v0.3-branch
     - name: nv-gem
       url: https://github.com/MechboardsLTD/zmk-module
       revision: nv_gem
-    - name: zmk-halcyon-module
-      remote: splitkb
-      revision: v0.3
   self:
     path: config
