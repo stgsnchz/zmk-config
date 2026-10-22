@@ -37,45 +37,26 @@
 #     shield: settings_reset
 
     
-# include:
-#   # USB dongle: central controller
-#   - board: halcyon_dongle//zmk
-#     shield: lily58_dongle
-
-#   # Lily58 left half: peripheral
-#   - board: nice_nano//zmk
-#     shield: lily58_left(1)
-#     cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
-
-#   # Lily58 right half: peripheral
-#   - board: nice_nano//zmk
-#     shield: lily58_right(1)
-#     cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
-
-#   # Reset firmware for both nice!nano v2 controllers
-#   - board: nice_nano//zmk
-#     shield: settings_reset
-
-#   # Reset firmware for the Halcyon Dongle
-#   - board: halcyon_dongle//zmk
-#     shield: settings_reset
-
 include:
-  # Halves: peripherals, in-tree Aurora shields + nice!view
-  - board: nice_nano//zmk
-    shield: splitkb_aurora_lily58_left nice_view_adapter nice_view
-    cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
-  - board: nice_nano//zmk
-    shield: splitkb_aurora_lily58_right nice_view_adapter nice_view_gem
-    cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
-
-  # Dongle: central
+  # USB dongle: central controller
   - board: halcyon_dongle//zmk
     shield: lily58_dongle
 
-  # Settings reset
+  # Lily58 left half: peripheral
+  - board: nice_nano//zmk
+    shield: lily58_left
+    cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
+
+  # Lily58 right half: peripheral
+  - board: nice_nano//zmk
+    shield: lily58_right
+    cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
+
+  # Reset firmware for both nice!nano v2 controllers
   - board: nice_nano//zmk
     shield: settings_reset
+
+  # Reset firmware for the Halcyon Dongle
   - board: halcyon_dongle//zmk
     shield: settings_reset
 
