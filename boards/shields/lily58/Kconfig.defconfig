@@ -1,8 +1,8 @@
-if SHIELD_lily58_DONGLE
+if SHIELD_LILY58_DONGLE
 
 # Max 16 characters in keyboard name
 config ZMK_KEYBOARD_NAME
-    default "My Keyboard"
+    default "Lily58"
 
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
