@@ -134,7 +134,7 @@
 &trans          &trans  &trans  &trans        &trans  &trans                          &trans  &trans  &trans  &trans  &trans   &trans
 &kp LCTRL       &trans  &trans  &trans        &trans  &trans                          &trans  &trans  &trans  &trans  &trans   &trans
 &kp LEFT_SHIFT  &trans  &trans  &trans        &trans  &trans        &trans    &trans  &trans  &trans  &trans  &trans  &trans   &trans
-                                &kp LEFT_ALT  &trans  &kp LEFT_GUI  &trans    &trans  &trans  &trans  &trans
+                                &kp LEFT_ALT  &to 1   &kp LEFT_GUI  &trans    &trans  &trans  &trans  &trans
             >;
 
             sensor-bindings =
