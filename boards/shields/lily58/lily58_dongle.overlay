@@ -32,7 +32,7 @@ RC(3,0) RC(3,1) RC(3,2) RC(3,3) RC(3,4) RC(3,5) RC(4,5) RC(4,6) RC(3,6) RC(3,7) 
         >;
     };
 
-    left_encoder: left_encoder {
+    left_encoder: encoder_left {
         status = "disabled";
     };
 
@@ -44,6 +44,14 @@ RC(3,0) RC(3,1) RC(3,2) RC(3,3) RC(3,4) RC(3,5) RC(4,5) RC(4,6) RC(3,6) RC(3,7) 
         compatible = "zmk,keymap-sensors";
         sensors = <&left_encoder &right_encoder>;
         triggers-per-rotation = <20>;
+    };
+
+    nice_view_spi: nice_view_spi {
+	status = "disabled";
+    };
+
+    pro_micro: pro_micro {
+	status = "disabled";
     };
 
 kata0510_lily58_layout: kata0510_lily58_layout {
