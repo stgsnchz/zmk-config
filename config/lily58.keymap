@@ -142,9 +142,9 @@
         alt_gr_layer {
             bindings = <
 &trans  &trans         &trans         &trans         &trans         &trans                           &trans         &trans         &trans             &trans              &trans              &trans
-&trans  &kp LC(LA(Q))  &kp LC(LA(W))  &kp LC(LA(E))  &kp LC(LA(R))  &kp LC(LA(T))                    &kp LC(LA(Y))  &kp LC(LA(U))  &kp LC(LA(I))      &kp SINGLE_QUOTE    &kp LC(LA(P))       &trans
+&trans  &kp RA(Q)      &kp RA(RC(W))  &kp RA(E)      &kp LC(LA(R))  &kp LC(LA(T))                    &kp LC(LA(Y))  &kp LC(LA(U))  &kp LC(LA(I))      &kp RA(O)           &kp LC(LA(P))       &trans
 &trans  &kp LC(LA(A))  &kp LC(LA(S))  &kp LC(LA(D))  &kp LC(LA(F))  &kp LC(LA(G))                    &kp LC(LA(H))  &kp LC(LA(J))  &kp LC(LA(K))      &kp LC(LA(L))       &kp LC(LA(PERIOD))  &trans
-&trans  &kp LC(LA(Z))  &kp LC(LA(X))  &kp LC(LA(C))  &kp LC(LA(V))  &kp LC(LA(B))  &trans    &trans  &kp LC(LA(N))  &kp LC(LA(M))  &kp LC(LA(COMMA))  &kp LC(LA(PERIOD))  &kp LC(LA(K))       &trans
+&trans  &kp LC(LA(Z))  &kp LC(LA(X))  &kp RA(C)      &kp LC(LA(V))  &kp LC(LA(B))  &trans    &trans  &kp LC(LA(N))  &kp LC(LA(M))  &kp LC(LA(COMMA))  &kp LC(LA(PERIOD))  &kp LC(LA(K))       &trans
                                       &trans         &trans         &trans         &trans    &trans  &trans         &trans         &trans
             >;
 
